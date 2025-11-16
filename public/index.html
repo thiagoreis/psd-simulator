@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Simulado Scrum PSD</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <h1>Simulado Scrum PSD</h1>
+        <p class="subtitle">Questões aleatórias a partir do seu README.md</p>
+      </header>
+
+      <section id="screen-start" class="card">
+        <h2>Configurar simulado</h2>
+        <div id="start-status" class="muted"></div>
+        <div class="form-row">
+          <label for="qtd">Quantidade de questões</label>
+          <input id="qtd" type="number" min="1" step="1" value="20" />
+        </div>
+        <div class="form-row">
+          <label>
+            <input id="show-correct-immediately" type="checkbox" />
+            Mostrar se acertei/errei ao avançar
+          </label>
+        </div>
+        <div class="actions">
+          <button id="btn-load" class="btn">Carregar questões</button>
+          <button id="btn-start" class="btn primary" disabled>Iniciar</button>
+        </div>
+      </section>
+
+      <section id="screen-quiz" class="card hidden">
+        <div class="quiz-header">
+          <div id="progress"></div>
+          <div id="question-count"></div>
+        </div>
+        <div id="question-area"></div>
+        <div id="feedback" class="feedback hidden"></div>
+        <div class="actions">
+          <button id="btn-prev" class="btn">Anterior</button>
+          <button id="btn-next" class="btn primary">Salvar e Próxima</button>
+          <button id="btn-finish" class="btn danger">Finalizar</button>
+        </div>
+      </section>
+
+      <section id="screen-results" class="card hidden">
+        <h2>Resultado</h2>
+        <div id="summary"></div>
+        <details class="gabarito">
+          <summary>Ver gabarito detalhado</summary>
+          <div id="details"></div>
+        </details>
+        <div class="actions">
+          <button id="btn-restart" class="btn">Refazer</button>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span>Feito para seu README.md de questões Scrum PSD</span>
+      </footer>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

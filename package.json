@@ -1,0 +1,20 @@
+{
+  "name": "scrum-psd-simulator-react",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Simulador de questões Scrum PSD (React + Vite) com timer total, timer por questão, persistência e exportação",
+  "scripts": {
+    "questions": "node parse-questions.js README.md",
+    "dev": "npm run questions && vite",
+    "build": "npm run questions && vite build",
+    "preview": "vite preview --port 5173"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "jspdf": "^2.5.1"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0"
+  }
+}
